@@ -1,0 +1,44 @@
+.tbl {
+    border: 1px solid black;
+    width: 50%;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.tb {
+  width: 54%;
+}
+.tbl-td {
+  border: 1px solid black;
+    width: 50%;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+th {
+  font-weight: bold;
+  border: 1px solid black;
+}
+body {
+    background-image: linear-gradient(135deg, #e954a1 10%, #1904E5 100%);
+}
+button {
+    padding: 20px 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(68, 18, 232);
+    color: white;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+  hr {
+    color: black;
+  }
+  input{
+    height: 45px;
+    width: 400px;
+    text-indent: 10px;
+    font-size: 1.05em;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}

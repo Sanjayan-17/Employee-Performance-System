@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HR Page</title>
+    <link rel="stylesheet" href="HRpage.css">
+      <h2> Welcome Mr <%=user_n %></h2>
+      <hr>
+       <h1><center>LIST OF EMPLOYEES </center></h1>
+    </head>
+      <br>
+    <script src = "HRpage.js"></script>
+    <script>
+        var fn = document.getElementById("user_fn").innerHTML;
+    </script>
+    <body>
+        <br>
+        <center>
+        <table class= "tb" style = "font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+        <form action="/proj_submit" method="post">
+        <tr>
+        <td text align="center"><b>ENTER EMPLOYEE NAME </b> </td>
+        <td><input type = "text" name = "user_fn" placeholder = "Employee's first name"></td>
+        <td><button type = "submit">PROJECT</button></td>
+         </tr>
+
+         </form>
+         </table>
+         <br>
+            <form action="/course_submit" method="post">
+ 
+           <center><button type = "submit">COURSES</button></center>
+            
+             </form>
+
+         
+        </center>
+        <br><br>
+        <center>
+        <table class="tbl">
+            <thead>
+                <tr>
+                  <th style="padding:20px;">Employee Name</th>
+                  <th style="padding:20px;">Position</th>
+                  <th style="padding:20px;">Email</th>
+                  <th style="padding:20px;">Mobile Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% users.forEach((user) => { %>
+                  <tr>
+                    <td style="padding:100px;" id = "user_fn" class="tbl-td"><%= user.firstName %> <%= user.lastName %></td>
+                    <td style="padding:100px;" class="tbl-td"><%= user.Role %></td>
+                    <td style="padding:100px;" class="tbl-td"><%= user.EMAIL %></td>
+                    <td style="padding:100px;" class="tbl-td"><%=user.MNumber %></td>
+                  </tr>
+                <% }); %>
+              </tbody>
+        </table>
+    </center>    
+    </body>

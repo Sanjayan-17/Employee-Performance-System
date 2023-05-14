@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Courses</title>
+    <style>
+        body{
+            background-image: url("https://th.bing.com/th/id/R.bcb3fcdffa4286e50dbc7667c7c3b164?rik=Eu%2fHQl7ZqWuscg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fd%2f8%2f9%2f1413302-cool-neon-backgrounds-1920x1080-windows-7.jpg&ehk=qFZZdxQLA8pxwHDHYUJAaQUpdg5NdFnpOEBDaB5Xl%2fA%3d&risl=&pid=ImgRaw&r=0");
+        }
+    </style>
+    <script type="text/JavaScript">
+        let a=1;
+        function createNewElement() {
+            // First create a DIV element.
+            var txtNewInputBox = document.createElement('div');
+        
+            // Then add the content (a new input box) of the element.
+            txtNewInputBox.innerHTML = "<input type='text' name = 'skill' class='skills' id='"+a+"'>";
+        
+            // Finally put it where it is supposed to appear.
+            document.getElementById("newElementId").appendChild(txtNewInputBox);
+            a=a+1;
+        }
+        </script>
+</head>
+<body>
+    <br><br>
+    <center>
+    <div class="form">
+        <form action="/course" enctype="multipart/form-data" method="post">
+            <h1 class="reg" style="color:black">Course</h1>
+            <label>Your Name <span style="color:red">*</span></label>
+            <input type="text" name = "uname" id="name" placeholder="Enter your  name"/>
+            <label>Course Name <span style="color:red">*</span></label>
+            <input type="text" name = "cname" id="coursename" placeholder="Enter your course name"/>
+            <label>Course Certificate</label>
+            <input type="file" id="coursecertificate" name = "certificate" placeholder="Enter your course certificate"/>
+            
+            <div id="dynamicCheck">
+                <input type="button" value="Add Skill   " onclick="createNewElement();"/>
+             </div>
+             <p>   </p>
+             <div id="newElementId">Enter Skills</div>
+             <p>             </p>
+             <button type="submit">Submit</button>
+            
+        </form>
+    </div>
+    </center>
+</body>
+</html>

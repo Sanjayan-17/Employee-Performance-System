@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<script>
+    function scrollto() {
+        window.scrollTo(0,550);
+    }
+    function scrollto2() {
+        window.scrollTo(0,1000);
+    }
+</script>
+<body>
+    <div class = "topnav" id = "topnav">
+        <a href = "#home" class = "active">Home</a>
+        <a href = "#About" onclick = "scrollto()" >About</a>
+        <a href = "#Submissions" onclick = "scrollto2()" >Submissions</a>
+        <a href = "logout" class = "profile">Logout</a>
+        <a href = "profile" class = "profile">Profile</a>
+        <a href = "performance" class="profile">Performance</a>
+    </div>
+    <div class="hero">
+        <h1>TECH SOLUTIONS COMPANY EMPLOYEE EVALUATION</h1>
+    </div>
+    <div class = "hero1">
+    <br><br>
+    <center><h1 style = "color:white"><u>EMPLOYEE PERFORMANCE MANAGEMENT SYSTEM</u></h1></center>
+    <br><br><br>
+    <center>
+    <table> 
+    <tr>
+    <td rowspan = "3">
+    <div class="about">
+        <p>
+            Employee Performance Management System provides a functionality of Submitting Projects and Courses.Click the button below to go to the respective pages where you can Submit Your Projects and Courses.It Will be Evaluated by the HR and appropriate Credits will be given and you may be promoted or demoted.
+        </p>
+    </div>
+    </td>
+    
+    <td>
+        <img src = "https://res.cloudinary.com/everfi/images/f_auto,q_auto/v1622740706/pexels-fauxels-3183150/pexels-fauxels-3183150.jpg?_i=AA"; width = "600" height = "350">
+    <td>
+    </table>
+    <br><br>
+    <table>
+        <tr>
+            <th>Credit</th>
+            <th>Action Taken</th>
+        </tr>
+        <tr>
+            <td>Greater than 20</td>
+            <td>Promotion</td>
+        </tr>
+        <tr>
+            <td>Lesser Than 5</td>
+            <td>Demotion</td>
+        </tr>
+        <tr>
+            <td>Between 5 and 20</td>
+            <td>No Action Taken</td>
+        </tr>
+        
+    </table><br><br>
+    </div>
+    </center><br><br>
+    <center>
+    <h1>Submit your Projects and Courses Below</h1></center>
+    <div class="clearfix">
+        <div class="box">
+        <a href="courses"><button  type = "button">SUBMIT COURSES</button></a>
+        </div>
+        <div class="box">
+            <a href="project"><button>SUBMIT PROJECTS</button></a>
+        </div>
+
+    </div>
+</body>
+</html>
